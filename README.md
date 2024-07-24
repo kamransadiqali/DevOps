@@ -1,5 +1,4 @@
-# DevOps
-*DevOps Tools*
+# DevOps Tools
 
 - Linux
 - YAML

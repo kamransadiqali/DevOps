@@ -1,16 +1,16 @@
-#Getting & Creating Projects
+# Getting & Creating Projects
 
 - git init	Initialize a local Git repository
 - git clone ssh://git@github.com/[username]/[repository-name].git	Create a local copy of a remote repository
 
-#Basic Snapshotting
+# Basic Snapshotting
 - git status	Check status
 - git add [file-name.txt]	Add a file to the staging area
 - git add -A	Add all new and changed files to the staging area
 - git commit -m "[commit message]"	Commit changes
 - git rm -r [file-name.txt]	Remove a file (or folder)
 
-#Branching & Merging
+# Branching & Merging
 - git branch	List branches (the asterisk denotes the current branch)
 - git branch -a	List all branches (local and remote)
 - git branch [branch name]	Create a new branch
@@ -27,7 +27,7 @@
 - git stash	Stash changes in a dirty working directory
 - git stash clear	Remove all stashed entries
 
-#Sharing & Updating Projects
+# Sharing & Updating Projects
 - git push origin [branch name]	Push a branch to your remote repository
 - git push -u origin [branch name]	Push changes to remote repository (and remember the branch)
 - git push	Push changes to remote repository (remembered branch)
@@ -37,7 +37,7 @@
 - git remote add origin ssh://git@github.com/[username]/[repository-name].git	Add a remote repository
 - git remote set-url origin ssh://git@github.com/[username]/[repository-name].git	Set a repository's origin branch to SSH
 
-#Inspection & Comparison
+# Inspection & Comparison
 - git log	View changes
 - git log --summary	View changes (detailed)
 - git log --oneline	View changes (briefly)

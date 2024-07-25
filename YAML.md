@@ -10,6 +10,30 @@ YAML was created specifically for common use cases such as:
 - Object persistence
 - Complex data structures
 
+# Data types
+- Scalars
+  image: httpd:latest
+  items: 39
+  price: 25.5
+
+- List
+  list:
+  - first
+  - second
+  - third
+list: [ first, second, third ]
+
+- Mappings (key-value pairs)
+  character:
+  name: aragorn
+  race: man
+character: { name: aragorn, race: man }
+
+
+- Boolean can be represented in multiple ways: yes/no, true/false, y/n, on/off.
+  overwrite: no
+
+
 # Relationship to JSON and XML
 ![image](https://github.com/user-attachments/assets/e28ff9ad-3f2b-4f31-81bb-631ad65ea2d5)
 

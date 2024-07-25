@@ -1,1 +1,12 @@
-# YAML
+# Rules for Creating YAML file
+
+- YAML is case sensitive
+- The files should have .yaml as the extension
+- YAML does not allow the use of tabs while creating YAML files; spaces are allowed instead
+
+# Conventional Block Format
+This block format uses hyphen+space to begin a new item in a specified list. 
+--- # Favorite movies
+ - Casablanca
+ - North by Northwest
+ - The Man Who Wasn't There

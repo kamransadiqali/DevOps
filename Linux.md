@@ -238,6 +238,84 @@
   - d, p, y, dd, yy
   - ZZ, :w!, :q!
   - EDITOR
+# 4. Devices, Linux Filesystems, Filesystem Hierarchy Standard
+## Create partitions and filesystems
+- Manage MBR and GPT partition tables.
+- Use various mkfs commands to create various filesystems such as:
+  - ext2/ext3/ext4
+  - XFS
+  - VFAT
+  - exFAT
+- Basic feature knowledge of Btrfs , including multi-device filesystems, compression, and subvolumes
+  - fdisk
+  - gdisk
+  - parted
+  - mkfs
+  - mkswap
+## Maintain the integrity of filesystems
+- Verify the integrity of filesystems.
+- Monitor free space and inodes.
+- Repair simply filesystem problems.
+  - du
+  - df
+  - fsck
+  - e2fsck
+  - mke2fs
+  - tune2fs
+  - xfs_repair
+  - xfs_fsr
+  - xfs_db
+## Control mounting and unmounting of filesystems
+- Manually mount and unmount filesystems.
+- Configure filesystems mounting on bootup.
+- Configure user mountable removable filesystems.
+- Use labels and UUIDs for identifying and mounting filesystems.
+- Awareness of systemd mount units
+  - /etc/fstab
+  - /media/
+  - mountumount
+  - blkid
+  - lsblk
+## Manage file permissions and ownership
+- Manage access permissions on regular and special files as well as directories.
+- Use access modes such as suid, sgid, and the sticky bit to maintain security.
+- Know how to change the file creation mask.
+- Use the group field to grant file access to group members.
+  - chmod
+  - umask
+  - chown
+  - chgrp
+## Create and change hard and symbolic links
+- Create links.
+- Identify hard and/or soft links.
+- Copying versus linking files
+- Use links to support system administration tasks.
+  - ln
+  - ls
+## Find system files and place files in the correct location
+- Understand the correct locations of files under the FHS.
+- Find files and commands on a Linux system.
+- Know the location and purpose of important file and directories as defined in the FHS.
+  - find
+  - locate
+  - updatedb
+  - whereis
+  - which
+  - type
+  - /etc/updatedb.conf
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

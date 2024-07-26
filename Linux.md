@@ -6,7 +6,6 @@
 - Tools and utilities to list various hardware information (e.g. lsusb, lspcilsusb, lspcilsusb, lspcilsusb, lspcilsusb, lspcilsusb, lspcilsusb, lspci lsusb, lspcilsusb, lspci lsusb, lspci , etc.)
 - Tools and utilities to manipulate USB devices
 - Conceptual understanding of sysfs, udev , and dbus
-## Boot the system
   - /sys/
   - /proc/
   - /dev/
@@ -14,6 +13,7 @@
   - lsmod
   - lspci
   - lsusb
+ ## Boot the system 
 - Provide common commands to the boot loader and options to the kernel at boot time.
 - Demonstrate knowledge of the boot sequence from BIOS/UEFI to boot completion.
 - Understand SysV init and systemd.
@@ -112,9 +112,132 @@
   - Guest drivers
   - SSH host keys
   - D-Bus machine id
-
-
-
+# 3. GNU and UNIX Commands
+## Work on the command line
+- Use single shell commands and one-line command sequences to perform basic tasks on the command line.
+- Use and modify the shell environment including defining, referencing, and exporting environment variables.
+- Use and edit command history.
+- Invoke commands inside and outside the defined path
+  - bash
+  - echo
+  - env
+  - export
+  - pwd
+  - set
+  - unset
+  - type
+  - which
+  - man
+  - uname
+  - history
+  - .bash_history
+  - Quoting
+## Process text streams using filters
+- Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package
+  - bzcat
+  - cat
+  - cut
+  - head
+  - less
+  - md5sum
+  - nl
+  - od
+  - paste
+  - sed
+  - sha256sum
+  - sha512sum
+  - sort
+  - split
+  - tail
+  - tr
+  - uniqwc
+  - xzcat
+  - zcat
+## Perform basic file management
+- Copy, move, and remove files and directories individually.
+- Copy multiple files and directories recursively.
+- Remove files and directories recursively.
+- Use simple and advanced wildcard specifications in commands.
+- Use find to locate and act on files based on type, size, or time.
+- Use tar, cpio, and dd
+  - cp
+  - find
+  - mkdir
+  - mv
+  - filegzip
+  - gunzip
+  - ls
+  - rm
+  - rmdir
+  - touch
+  - tar
+  - cpio
+  - bzip2
+  - bunzip2
+  - xz
+  - unxz
+  - file globbing
+  - dd
+## Use streams, pipes, and redirects
+- Redirect standard input, standard output, and standard error.
+- Pipe the output of one command to the input of another command.
+- Use the output of one command as arguments to another command.
+- Send output to both stdout and a file
+  - tee
+  - xargs
+## Create, monitor, and kill processes
+- Run jobs in the foreground and background.
+- Signal a program to continue running after logout.
+- Monitor active processes.
+- Select and sort processes for display.
+- Send signals to processes.
+  - &
+  - bg
+  - fg
+  - jobs
+  - uptime
+  - kill
+  - nohup
+  - ps
+  - top
+  - free
+  - pkill
+  - killall
+  - watch
+  - screen
+  - tmux
+  - pgrep
+## Modify process execution priorities
+- Know the default priority of a job that is created.
+- Run a program with higher or lower priority than the default.
+- Change the priority of a running process.
+  - niceps
+  - renice
+  - top
+## Search text files using regular expressions
+- Create simple regular expressions containing several notational elements.
+- Understand the differences between basic and extended regular expressions.
+- Understand the concepts of special characters, character classes, quantifiers, and anchors.
+- Use regular expression tools to perform searches through a filesystem or file content.
+- Use regular expressions to delete, change, and substitute text.
+  - grep
+  - egrep
+  - fgrep
+  - sed
+  - regex(7)
+## Basic file editing
+- Navigate a document using vi.
+- Understand and use Vi modes.
+- Insert, edit, delete, copy, and find text in Vi.
+- Be aware of Emacs, nano, and vim.
+- Configure the standard editor.
+  - vi
+  - /, ?
+  - h,j,k,l
+  - i, o, a
+  - d, p, y, dd, yy
+  - ZZ, :w!, :q!
+  - EDITOR
 
 
 

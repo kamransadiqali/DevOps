@@ -13,6 +13,8 @@
   - lsmod
   - lspci
   - lsusb
+  - lscpu    Displays information about the CPU architecture on the given machine.
+  - lshw    Displays information about a system’s hardware. The command needs to be run as sudo in order to get all hardware information.
  ## Boot the system 
 - Provide common commands to the boot loader and options to the kernel at boot time.
 - Demonstrate knowledge of the boot sequence from BIOS/UEFI to boot completion.
@@ -45,7 +47,7 @@
   - /etc/init.d/
   - telinit
   - systemd
-  - systemctl
+  - systemctl    Used to inspect and control the state of the systemd suite of Linux system components.
   - /etc/systemd/
   - /usr/lib/systemd/
   - Wall
@@ -203,15 +205,15 @@ location.
 - Select and sort processes for display.
 - Send signals to processes.
   - &
-  - bg
-  - fg
-  - jobs
+  - bg    Sends a job to the background.
+  - fg    Sends a job to the foreground.
+  - jobs  Lists the jobs invoked from the process window
   - uptime
   - kill
   - nohup
   - ps      Displays the status of the current processes.
   - top    Displays information about the running Linux processes.env
-  - free
+  - free    This command reports information about memory status on the local computer or virtual machine.
   - pkill
   - killall
   - watch
@@ -259,7 +261,8 @@ location.
   - VFAT
   - exFAT
 - Basic feature knowledge of Btrfs , including multi-device filesystems, compression, and subvolumes
-  - fdisk
+  - fdisk    Used for working with disk partitions on a computer’s hard drive. You can use fdisk to format and partition a new drive. Also, you can use fdisk to
+get information about existing drives.
   - gdisk
   - parted
   - mkfs
@@ -275,7 +278,7 @@ device mount. If no file name is given, the space available on all mounted file 
   - e2fsck
   - mke2fs
   - tune2fs
-  - xfs_repair
+  - xfs_repair    Inspects and optionally repairs a hard drive on a computer running RHEL Linux.
   - xfs_fsr
   - xfs_db
 ## Control mounting and unmounting of filesystems
@@ -286,7 +289,8 @@ device mount. If no file name is given, the space available on all mounted file 
 - Awareness of systemd mount units
   - /etc/fstab
   - /media/
-  - mountumount
+  - mount    Shows or attaches a device êlesystem to a Linux operating system’s master êle tree.
+  - umount
   - blkid
   - lsblk
 ## Manage file permissions and ownership
@@ -294,9 +298,9 @@ device mount. If no file name is given, the space available on all mounted file 
 - Use access modes such as suid, sgid, and the sticky bit to maintain security.
 - Know how to change the file creation mask.
 - Use the group field to grant file access to group members.
-  - chmod
+  - chmod    Changes the permissions granted to a êle or directory.
   - umask
-  - chown
+  - chown    Changes the owner of a êle according to user and/or group.
   - chgrp
 ## Create and change hard and symbolic links
 - Create links.
@@ -384,6 +388,7 @@ variables.
 - groups    Lists the groups to which a user belongs.
 - gpasswd    The command gpasswd is used to manage the configuration of a group under the Linux operating system. The
 command must be run as sudo for administrator access.
+- groupadd    Adds a group to a computer running the Linux operating system. The command must be run as sudo in order to have administrator access.
 - chage
 - getent
 - groupadd    Adds a group to the computer. The command must be run as sudo for administrator access.
@@ -474,7 +479,7 @@ administrator access.
 - /etc/hosts
 - /etc/nsswitch.conf
 - /etc/resolv.conf
-- nmcli
+- nmcli    The application nmcli is the command-line interface for working with the Linux NetworkManager.
 - hostnamectl
 - ifup
 - ifdown
@@ -496,7 +501,7 @@ administrator access.
 - /etc/hosts
 - /etc/resolv.conf
 - /etc/nsswitch.conf
-- host
+- host    Reports information about a given domain name.
 - dig
 - getent
 # 10. Security
@@ -551,7 +556,22 @@ Windows, you would use PPuuTTTTYY and WWiinnSSCCPP. An sssshh..eexxee is also av
 to curl.
 - nslookup    A program that queries for information about a particular Internet domain name.
 - sestatus    This program is used to report status information about a computer or virtual machine running SELinux.
-
+- ausearch    Used to query the audit logs according to events deêned by diéerent search criteria.
+- iptables    Sets and monitors network access to a given computer.
+- iotop      iotop is a system monitoring program. It does not ship by default with Red Hat Enterprise Linux and must must be installed using the command set
+sudo yum install itop.
+- getenforce    Reports the current mode of SELinux rules enforcement. The modes are Enforcing, Permissive, or Disabled.
+- getsebool    Reports whether an applicable SELinux setting is on or off. Use the -a option to show the boolean value of all settings.
+- restorecon    Used to set the security context (extended SELinux êle labels) on one or more êles to the default setting.
+- semanage    Allows administrators to manage SELinux capabilities according to the particular object of interest. Each object will have its own set of options.
+Examples of semanage objects are user, login, port, and fcontext, to name a few.
+- setsebool    Applies a boolean value to an SELinux setting.
+- subscription-manager    The subscription-manager is the command-line version of the graphical Red Hat Enterprise Linux Subscription Manager. Subscription Manager is a
+service that keeps track of the Red Hat products and subscriptions installed on a local computer. Subscription Manager communicates with the
+subscription service on the backend. Typically, backend settings are managed via the Customer Portal or an on-premise server such as Subscription
+Asset Manager. Subscription Manager works with content management tools such as yum.
+The command subscription-manager will run as the root user; thus, a password prompt will be presented upon invocation.
+- vmstat    Reports information about virtual memory usage as well as other relevant system data.
 
 
 

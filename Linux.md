@@ -38,6 +38,9 @@
 - Awareness of acpid
   - /etc/inittab
   - shutdown
+  - poweroff    Shuts down a computer. Must be run as sudo.
+  - reboot      Restarts a computer. Must be run as sudo.
+  - whoami      Displays the user ID.
   - init
   - /etc/init.d/
   - telinit
@@ -97,7 +100,7 @@
   - rpm2cpio
   - /etc/yum.conf
   - /etc/yum.repos.d/
-  - Yum
+  - Yum    The application installation and removal tool for Fedora, CentOS, and Red Hat Enterprise Linux (RHEL).
   - zypper
 ## Linux as a virtualization guest
 - Understand the general concept of virtual machines and containers.
@@ -119,15 +122,17 @@
 - Use and edit command history.
 - Invoke commands inside and outside the defined path
   - bash
-  - echo
+  - echo    Displays a string to stdout or to a file.
+  - cd      Change to another current directory.
   - env
   - export
-  - pwd
+  - pwd    Displays the name of the present working directory.
   - set
   - unset
   - type
-  - which
-  - man
+  - which    Commands in this section apply to working with a computer’s applications and executables.
+  - man      Displays the internal help documentation for a given command.
+  - curl    Gets or posts a file to or from the Internet according to a URL.
   - uname
   - history
   - .bash_history
@@ -135,7 +140,8 @@
 ## Process text streams using filters
 - Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package
   - bzcat
-  - cat
+  - cat    Commands in this section apply to working with data sent to stdout or displayed in a computer’s terminal window.
+  - clear  Clears the terminal screen.
   - cut
   - head
   - less
@@ -160,17 +166,20 @@
 - Use simple and advanced wildcard specifications in commands.
 - Use find to locate and act on files based on type, size, or time.
 - Use tar, cpio, and dd
-  - cp
-  - find
-  - mkdir
-  - mv
+  - cp    Copies the contents of the source directory or file to a target directory or file.
+  - find  Finds a file or directory by name.
+  - mkdir    Creates a directory.
+  - more    Allows a user to view and traverse the content of a file or stdout. The command more invokes itself within a distinct
+command-line user interface. To exit the process users press the q key.
+  - mv    Moves a file or directory. The mv command transfers all the contents from the source file or directory to the new
+location.
   - filegzip
   - gunzip
   - ls
-  - rm
+  - rm    Removes a file or directory.
   - rmdir
   - touch
-  - tar
+  - tar    Compresses and decompresses files or directories.
   - cpio
   - bzip2
   - bunzip2
@@ -198,8 +207,8 @@
   - uptime
   - kill
   - nohup
-  - ps
-  - top
+  - ps      Displays the status of the current processes.
+  - top    Displays information about the running Linux processes.env
   - free
   - pkill
   - killall
@@ -220,7 +229,7 @@
 - Understand the concepts of special characters, character classes, quantifiers, and anchors.
 - Use regular expression tools to perform searches through a filesystem or file content.
 - Use regular expressions to delete, change, and substitute text.
-  - grep
+  - grep    
   - egrep
   - fgrep
   - sed
@@ -291,7 +300,7 @@
 - Copying versus linking files
 - Use links to support system administration tasks.
   - ln
-  - ls
+  - ls    Lists the contents of a directory. Defaults to the current directory.
 ## Find system files and place files in the correct location
 - Understand the correct locations of files under the FHS.
 - Find files and commands on a Linux system.
@@ -306,11 +315,13 @@
 # 5. Shells and Shell Scripting
 ## Customize and use the shell environment
 - .
-- source
+- source  Executes commands stored in a file from within the current shell, and can also be used to refresh environment
+variables.
 - /etc/bash.bashrc
 - /etc/profile
-- env
-- export
+- env    Displays all environment variables running on the system.
+- export  Creates an environment variable with a value and then exports the environment variable or value pair to the system.
+- printenv  Prints a particular environment variable to the console.
 - set
 - unset
 - ∼/.bash_profile
@@ -329,7 +340,7 @@
 - seq
 - exec
 - ||
-- &&
+- &&    Removes a running process from memory.
 # 6. User Interfaces and Desktops
 ## Install and configure X11
 - /etc/X11/xorg.conf
@@ -459,7 +470,7 @@
 - ifup
 - ifdown
 ## Basic network troubleshooting
-- ip
+- ip    Gets the IP information for the physical or virtual machine.
 - hostname
 - ss
 - ping
@@ -487,7 +498,8 @@
 - lsof
 - nmap
 - chage
-- netstat
+- netstat    Displays information about network connections, routing tables, interface statistics, masquerade connections, and
+multicast memberships.
 - sudo
 - /etc/sudoers
 - su
@@ -506,7 +518,8 @@
 - /etc/hosts.allow
 - /etc/hosts.deny
 ## Securing data with encryption
-- ssh
+- ssh    Secure shell is an encrypted network protocol that provides remote login and command execution capabilities. On
+Windows, you would use PPuuTTTTYY and WWiinnSSCCPP. An sssshh..eexxee is also available via Cygwin, as well as with a Git installation.
 - ssh-keygen
 - ssh-agent
 - ssh-add
@@ -525,6 +538,8 @@
 - gpg
 - gpg-agent
 - ~/.gnupg/
+- wget    Downloads files from the Internet. Supports the HTTP, HTTPS, and FTP protocols. You can use wget as an alternative
+to curl.
 
 
 

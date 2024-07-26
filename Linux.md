@@ -49,6 +49,7 @@
   - /etc/systemd/
   - /usr/lib/systemd/
   - Wall
+  - users    Displays the names of users logged in to the computer.
 # 2. Linux Installation and Package Management
 ## Design hard disk layout
 - Allocate filesystems and swap space to separate partitions or disks.
@@ -133,8 +134,9 @@
   - which    Commands in this section apply to working with a computer’s applications and executables.
   - man      Displays the internal help documentation for a given command.
   - curl    Gets or posts a file to or from the Internet according to a URL.
-  - uname
-  - history
+  - uname      The command uname reports system information about the local computer
+  - history    Displays a list of commands executed on the system. The history command can also be used to manipulate the
+history list and the way that history information is displayed.
   - .bash_history
   - Quoting
 ## Process text streams using filters
@@ -232,8 +234,9 @@ location.
   - grep    
   - egrep
   - fgrep
-  - sed
+  - sed    Manipulates the content of a file or output sent to stdout.
   - regex(7)
+  - diff    Displays the difference in content between two files.
 ## Basic file editing
 - Navigate a document using vi.
 - Understand and use Vi modes.
@@ -265,8 +268,9 @@ location.
 - Verify the integrity of filesystems.
 - Monitor free space and inodes.
 - Repair simply filesystem problems.
-  - du
-  - df
+  - du    Reports information about disk usage on the local computer or virtual machine.
+  - df    Shows the amount of disk space used and available according to the file system that represents a particular disk
+device mount. If no file name is given, the space available on all mounted file systems is displayed.
   - fsck
   - e2fsck
   - mke2fs
@@ -305,7 +309,7 @@ location.
 - Understand the correct locations of files under the FHS.
 - Find files and commands on a Linux system.
 - Know the location and purpose of important file and directories as defined in the FHS.
-  - find
+  - find    Finds a file or directory by name.
   - locate
   - updatedb
   - whereis
@@ -330,7 +334,8 @@ variables.
 - ∼/.bashrc
 - ∼/.bash_logout
 - function
-- alias
+- alias    Assigns a shortcut name to an existing command or executable.
+- awk      Finds, filters, or replaces text in a file or from stdout.
 ## Customize or write simple scripts
 - for
 - while
@@ -376,15 +381,19 @@ variables.
 - /etc/shadow
 - /etc/group
 - /etc/skel/
+- groups    Lists the groups to which a user belongs.
+- gpasswd    The command gpasswd is used to manage the configuration of a group under the Linux operating system. The
+command must be run as sudo for administrator access.
 - chage
 - getent
-- groupadd
-- groupdel
+- groupadd    Adds a group to the computer. The command must be run as sudo for administrator access.
+- groupdel    Deletes a group from the computer. The command must be run as sudo for administrator access.
 - groupmod
 - passwd
-- useradd
-- userdel
-- usermod
+- useradd    Adds a user to the computing environment. The command must be run as sudo for administrator access.
+- userdel    Deletes a user from the computer. The command must be run as sudo for administrator access.
+- usermod    Modifies user account information and can be used to add a user to a group. The command must be run as sudo for
+administrator access.
 ## Automate system admin-istration tasks by schedul-ing jobs  
 - /etc/cron.{d,daily,hour-ly,monthly,weekly}/
 - /etc/at.deny
@@ -471,11 +480,11 @@ variables.
 - ifdown
 ## Basic network troubleshooting
 - ip    Gets the IP information for the physical or virtual machine.
-- hostname
+- hostname    Reports the local computer’s host name.
 - ss
 - ping
 - ping6
-- traceroute
+- traceroute    Reports the route that a packet takes in hops to move through the Internet to reach its destination.
 - traceroute6
 - tracepath
 - tracepath6
@@ -540,8 +549,8 @@ Windows, you would use PPuuTTTTYY and WWiinnSSCCPP. An sssshh..eexxee is also av
 - ~/.gnupg/
 - wget    Downloads files from the Internet. Supports the HTTP, HTTPS, and FTP protocols. You can use wget as an alternative
 to curl.
-
-
+- nslookup    A program that queries for information about a particular Internet domain name.
+- sestatus    This program is used to report status information about a computer or virtual machine running SELinux.
 
 
 

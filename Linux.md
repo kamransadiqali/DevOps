@@ -405,6 +405,127 @@
 - ISO-8859
 - ASCII
 - Unicode
+# 8. Essential System Services
+## Maintain system time
+- /usr/share/zoneinfo/
+- /etc/timezone
+- /etc/localtime
+- /etc/ntp.conf
+- /etc/chrony.conf
+- date
+- hwclock
+- timedatectl
+- ntpd
+- ntpdate
+- chronyc
+- pool.ntp.org
+## System logging
+- /etc/rsyslog.conf
+- /var/log/
+- logger
+- logrotate
+- /etc/logrotate.conf
+- /etc/logrotate.d/
+- journalctl
+- systemd-cat
+- /etc/systemd/journald.conf
+- /var/log/journal/
+## Mail Transfer Agent (MTA) basics
+~/.forward
+- sendmail emulation layer commands
+- newaliases
+- mail
+- mailq
+- Postfix
+- sendmail
+- Exim
+## Manage printers and printing
+- CUPS configuration files, tools, and utilities
+- /etc/cups/
+- lpd legacy interface (lpr, lprm, lpq)
+# 9. Networking Fundamentals
+## Fundamentals of Internet protocols
+- /etc/services
+- IPv4, IPv6
+- Subnetting
+- TCP, UDP, ICMP
+## Persistent network configuration
+- /etc/hostname
+- /etc/hosts
+- /etc/nsswitch.conf
+- /etc/resolv.conf
+- nmcli
+- hostnamectl
+- ifup
+- ifdown
+## Basic network troubleshooting
+- ip
+- hostname
+- ss
+- ping
+- ping6
+- traceroute
+- traceroute6
+- tracepath
+- tracepath6
+- netcat
+- ifconfig
+- netstat
+- route
+## Configure client-side DNS
+- /etc/hosts
+- /etc/resolv.conf
+- /etc/nsswitch.conf
+- host
+- dig
+- getent
+# 10. Security
+## Perform security administration tasks
+- find
+- passwd
+- fuser
+- lsof
+- nmap
+- chage
+- netstat
+- sudo
+- /etc/sudoers
+- su
+- usermod
+- ulimit
+- who, w, last
+## Setup host security
+- /etc/nologin
+- /etc/passwd
+- /etc/shadow
+- /etc/xinetd.d/
+- /etc/xinetd.conf
+- systemd.socket
+- /etc/inittab
+- /etc/init.d/
+- /etc/hosts.allow
+- /etc/hosts.deny
+## Securing data with encryption
+- ssh
+- ssh-keygen
+- ssh-agent
+- ssh-add
+- ~/.ssh/id_rsa and id_rsa.pub
+- ~/.ssh/id_dsa and id_dsa.pub
+- ~/.ssh/id_ecdsa and id_ecdsa.pub
+- ~/.ssh/id_ed25519 and id_ed25519.pub
+- /etc/ssh/ssh_host_rsa_key and ssh_host_rsa_key.pub
+- /etc/ssh/ssh_host_dsa_key and ssh_host_dsa_key.pub
+- /etc/ssh/ssh_host_ecdsa_key and
+- ssh_host_ecdsa_key.pub
+- /etc/ssh/ssh_host_ed25519_key and
+- ssh_host_ed25519_key.pub
+- ~/.ssh/authorized_keys
+- ssh_known_hosts
+- gpg
+- gpg-agent
+- ~/.gnupg/
+
 
 
 

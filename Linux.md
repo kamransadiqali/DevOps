@@ -303,9 +303,108 @@
   - which
   - type
   - /etc/updatedb.conf
-
-
-
+# 5. Shells and Shell Scripting
+## Customize and use the shell environment
+- .
+- source
+- /etc/bash.bashrc
+- /etc/profile
+- env
+- export
+- set
+- unset
+- ∼/.bash_profile
+- ∼/.bash_login
+- ∼/.profile
+- ∼/.bashrc
+- ∼/.bash_logout
+- function
+- alias
+## Customize or write simple scripts
+- for
+- while
+- test
+- if
+- read
+- seq
+- exec
+- ||
+- &&
+# 6. User Interfaces and Desktops
+## Install and configure X11
+- /etc/X11/xorg.conf
+- /etc/X11/xorg.conf.d/
+- ~/.xsession-errors
+- xhost
+- xauth
+- DISPLAY
+- X
+## Graphical desktops
+- KDE
+- Gnome
+- Xfce
+- X11
+- XDMCP
+- VNC
+- Spice
+- RDP
+## Accessibility
+- High con-trast/large print desktop themes
+- Screen reader
+- Braille display
+- Screen magnifier
+- On-screen key-board
+- Sticky/repeat keys
+- Slow/bounce/toggle keys
+- Mouse keys
+- Gestures
+- Voice recognition
+# 7. Administrative Tasks
+## Manage user and group accounts and related system files
+- /etc/passwd
+- /etc/shadow
+- /etc/group
+- /etc/skel/
+- chage
+- getent
+- groupadd
+- groupdel
+- groupmod
+- passwd
+- useradd
+- userdel
+- usermod
+## Automate system admin-istration tasks by schedul-ing jobs  
+- /etc/cron.{d,daily,hour-ly,monthly,weekly}/
+- /etc/at.deny
+- /etc/at.allow
+- /etc/crontab
+- /etc/cron.allow
+- /etc/cron.deny
+- /var/spool/cron
+- crontab
+- at
+- atq
+- atrm
+- systemctl
+- systemd-run
+## Localization and internationalization
+- /etc/timezone
+- /etc/localtime
+- /usr/share/zoneinfo/
+- LC_*
+- LC_ALL
+- LANG
+- TZ
+- /usr/bin/locale
+- tzselect
+- timedatectl
+- date
+- iconv
+- UTF-8
+- ISO-8859
+- ASCII
+- Unicode
 
 
 

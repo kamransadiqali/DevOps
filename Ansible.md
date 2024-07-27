@@ -179,6 +179,27 @@ poll = This parameter tells how frequently you would like to poll for status
     - name: "second task"
       command: touch /tmp/task2.txt
 ```
-
+### Encrypting a file
+```
+ansible-vault encrypt inventory.txt --output enc_inven.txt
+```
+### Viewing encrypted file
+```
+ansible-vault view enc_inven.txt
+```
+### Running Ansible with Vault-Encrypted Files
+```
+ansible-playbook -i enc_inven.txt playbook.yml --ask-vault-pass
+```
+### Lookups for CSV
+```
+- name: Test Connectivity
+  hosts: webserver1
+  vars:
+    ansible_ssh_pass: "{{ lookup('csvfile', 'webserver1 file=credentials.csv delimiter=,') }}"
+  tasks:
+    - name: create a dummy file on webserver
+      command: touch /tmp/csv_lookups.txt
+```
 
 

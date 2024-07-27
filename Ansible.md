@@ -11,18 +11,6 @@
 > - Modules
 > - Library
 
-
-# Installation
-```
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:ansible/ansible
-sudo apt-get update
-sudo apt-get install ansible
-```
-To check ansibel version:
-```
-ansible --version
-```
 # Inventory
 Ansible works against multiple systems in your infrastructure at the same time. It does this by selecting portions of systems listed in Ansible’s inventory file, which defaults to being saved in the below location.
 ```
@@ -83,3 +71,15 @@ Modules are the units of work that Ansible ships out to remote machines. Ansible
 a library.
 # Library
 A collection of modules made available to /usr/bin/ansible or an Ansible playbook.
+
+# Installation
+```
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+```
+To check ansibel version:
+```
+ansible --version
+```

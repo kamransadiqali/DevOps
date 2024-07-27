@@ -53,7 +53,7 @@ Ping the localhost by Ad-Hoc Commands on Local Machine
 ansible -m ping localhost
 ```
 
-Creating custom inventory file
+### Creating custom inventory file
 - Disabling host key checking Firstly, make a change in ansible.cfg file which is located at /etc/ansible directory Uncomment the line host_key_checking = False
 - Create inventory file In /etc/ansible/ directory, and create inventory.txt file, and add below details to it: vi inventory.txt
 ```
@@ -86,12 +86,49 @@ dbserver3
 SSH agent.
 - **ansible_become** Equivalent to ansible_sudo or ansible_su, allows to force privilege escalation.
 
-Run some shell commands on the hosts and groups you defined
+### Ad-Hoc Commands on Inventory
 ```
+ansible -m ping webserver1
+ansible -m ping dbserver1
 ansible -m shell -a 'ls -al' webserver1
 ansible -m shell -a 'whoami' dbserver1
 ansible -m shell -a 'ifconfig' webserver1
 ansible -m shell -a 'hostname' dbserver1
 ```
-
+### Tasks as Ad-Hoc Commands
+```
+ansible webservers -m file -a "path=/var/www/html/assets state=directory"
+ansible webservers -m apt -a "name=nginx state=present"
+ansible webservers -m service -a "name=nginx enabled=yes state=started"
+```
+### Module Ad-Hoc Commands
+```
+ansible-doc -l
+ansible-doc apt
+ansible -m apt -a "name=nginx state=present update_cache=yes" web1
+ansible -m shell -a "whoami" web1 --become
+```
+### Playbook
+```
+---
+- name: Update web servers
+  hosts: webservers
+  remote_user: root
+  tasks:
+    - name: Ensure apache is at the latest version
+      yum:
+        name: httpd
+        state: latest
+```
+```
+- name: this is our first play.
+  hosts: webserver1
+  tasks:
+    - name: "create a dummy file on websever1"
+      command: touch /tmp/ansible_dummy.txt
+```
+```
+ansible-playbook playbook1.yml -i final_inventory.yml
+```
+### Roles
 

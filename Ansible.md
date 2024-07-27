@@ -1,5 +1,5 @@
 > [!NOTE]
-> Ansible is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
+> **Ansible** is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
 
 > [!IMPORTANT]
 > - Inventory
@@ -85,3 +85,13 @@ Inventory Parameters
 - **ansible_ssh_private_key_file** Private key file used by ssh. Useful if using multiple keys and you don’t want to use
 SSH agent.
 - **ansible_become** Equivalent to ansible_sudo or ansible_su, allows to force privilege escalation.
+
+Run some shell commands on the hosts and groups you defined
+```
+ansible -m shell -a 'ls -al' webserver1
+ansible -m shell -a 'whoami' dbserver1
+ansible -m shell -a 'ifconfig' webserver1
+ansible -m shell -a 'hostname' dbserver1
+```
+
+

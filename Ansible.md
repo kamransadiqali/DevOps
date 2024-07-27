@@ -3,13 +3,13 @@
 
 > [!IMPORTANT]
 > - Inventory
-> Host
-> Group
-> Playbook
-> Play
-> Task
-> Modules
-> Library
+> - Host
+> - Group
+> - Playbook
+> - Play
+> - Task
+> - Modules
+> - Library
 
 
 # Installation

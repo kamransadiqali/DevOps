@@ -80,7 +80,7 @@ dbserver1
 dbserver2
 dbserver3
 ```
-Inventory Parameters
+### Inventory Parameters
 - **ansible_user** The default ssh user name to use.
 - **ansible_ssh_private_key_file** Private key file used by ssh. Useful if using multiple keys and you don’t want to use
 SSH agent.

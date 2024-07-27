@@ -201,5 +201,28 @@ ansible-playbook -i enc_inven.txt playbook.yml --ask-vault-pass
     - name: create a dummy file on webserver
       command: touch /tmp/csv_lookups.txt
 ```
-
+### Run Ansible Tasks as Sudo
+```
+- name: this is our first play.
+  hosts: webserver
+  sudo: yes
+  tasks:
+    - name: "create a dummy file on websever1"
+      lineinfile: dest=/etc/resolv.conf line="nameserver 8.8.8.8"
+```
+For running this playbook, we need to provide the password as well for the sudo privilege. The same can be achieved by passing the ask-become-pass flag in the Ansible command as below:
+```
+ansible-playbook lineInFile1.yml --ask-become-pass
+```
+### Run Ansible Tasks as a user other than root
+```
+- name: this is our first play.
+  hosts: webserver
+  become: yes
+  become_user: user
+  become_method: su
+  tasks:
+    - name: "login username"
+      command: touch /tmp/become_user.txt
+```
 

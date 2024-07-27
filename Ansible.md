@@ -131,4 +131,54 @@ ansible -m shell -a "whoami" web1 --become
 ansible-playbook playbook1.yml -i final_inventory.yml
 ```
 ### Roles
+To create Ansible roles, use the ansible-galaxy command which has the templates to create it. This will create it under the default directory /etc/ansible/roles.
+```
+ansible-galaxy init dummy
+
+- name: this is our 1st play.
+  hosts: webserver1
+  roles:
+    - php
+    - webserver
+```
+### Synchronous playbook tasks
+```
+- name: this is our 1st play.
+  hosts: webserver1
+  tasks:
+    - name: "sleep for 120 sec"
+      command: sleep 120
+    - name: "second task"
+      command: touch /tmp/second_task.txt
+```
+The first task sleep for 120 sec will take 2 minutes to complete. Once the sleep is over, it will create a file at a defined location. In this period, a connection might be interrupted causing failure.
+### Asynchronous playbook tasks
+```
+- name: this is our 1st play.
+  hosts: webserver1
+  tasks:
+    - name: "sleep for 60 sec"
+      command: sleep 60
+      async: 70
+      poll: 35
+    - name: "second task"
+      command: touch /tmp/second_task.txt
+```
+async = Maximum runtime. The task will timeout if it exceeds the limit of this parameter.
+
+poll = This parameter tells how frequently you would like to poll for status
+
+### Ignoring failed commands
+```
+- name: "strategy demo"
+  hosts: webserver1,sqlserver1
+  tasks:
+    - name: "first task"
+      command: touch /tmp/task/task1.txt
+      ignore_errors: True
+    - name: "second task"
+      command: touch /tmp/task2.txt
+```
+
+
 

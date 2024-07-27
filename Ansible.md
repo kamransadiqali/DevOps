@@ -29,7 +29,7 @@ a library.
 # Library
 A collection of modules made available to /usr/bin/ansible or an Ansible playbook.
 
-# Installation
+## Installation
 ```
 sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:ansible/ansible

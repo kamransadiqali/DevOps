@@ -1,5 +1,15 @@
-> [!NOTES]
+> [!NOTE]
 > Ansible is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.
+> [!IMPORTANT]
+> Inventory
+> Host
+> Group
+> Playbook
+> Play
+> Task
+> Modules
+> Library
+
 
 # Installation
 ```
@@ -13,7 +23,7 @@ To check ansibel version:
 ansible --version
 ```
 # Inventory
-The default location for inventory is below. The format is an INI-like format:
+Ansible works against multiple systems in your infrastructure at the same time. It does this by selecting portions of systems listed in Ansible’s inventory file, which defaults to being saved in the below location.
 ```
 cat /etc/ansible/hosts
 ```

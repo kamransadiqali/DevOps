@@ -1,3 +1,7 @@
+
+> [!NOTE]
+> **YAML** *is a human-readable data serialization language. It is commonly used for configuration files and in applications where data are being stored or transmitted.*
+ 
 # Definition of a YAML file
 "YAML is a human-friendly, data serialization standard for all programming languages."
 

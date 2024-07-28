@@ -48,3 +48,13 @@ character: { name: aragorn, race: man }
 # Important aspects of YAML basics
 
 ![image](https://github.com/user-attachments/assets/e0bbbf09-a7e3-4048-b05d-6d662469ff43)
+
+# YAML Basics
+## Step-01: Comments & Key Value Pairs
+- Space after colon is mandatory to differentiate key and value
+```
+# Defining simple key value pairs
+name: kalyan
+age: 23
+city: Hyderabad
+```

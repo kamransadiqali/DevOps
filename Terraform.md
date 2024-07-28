@@ -111,6 +111,14 @@ terraform output
 ```
 terraform graph
 ```
-
-
+## Test Your Expressions
+- Allow testing and exploration of expressions on the interactive console using the command line. e.g. 1+2
+```
+terraform console
+```
+## Shell Tab-completion
+- To install the Shell Tab-completion
+```
+terraform -install-autocomplete
+```
 

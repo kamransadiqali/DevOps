@@ -11,4 +11,5 @@
 - Kubernetes
 - AWS
 
-![alt text]((https://marvel-b1-cdn.bc0a.com/f00000000236551/dt-cdn.net/wp-content/uploads/2021/07/13429_ILL_DevOpsLoop.png))
+
+![DevOps](https://github.com/user-attachments/assets/66587bd5-d1b8-45d7-8f92-588123040ff2)

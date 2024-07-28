@@ -30,3 +30,70 @@ Before jumping into learning kubernetes, you need to have a fair amount of knowl
 - Software Defined Networking (SDN)
 - Virtual Interfaces
 - Overlay networking
+
+# Understand KubeConfig File
+Kubeconfig file is a YAML file that contains all the cluster information and credentials to connect to the cluster.
+As a Devops Engineer, You should learn to connect to kubernetes clusters in different ways using the Kubeconfig file. Because you will be responsible for setting up cluster authentication for CI/CD systems, providing cluster access to developers, etc.
+
+# Understand Kubernetes Objects And Resources
+
+You will quite often come across the names “Kubernetes Object” and “Kubernetes Resource“
+
+First, you need to Understand the difference between an object and a resource in kubernetes.
+
+To put it simply, anything a user creates and persists in Kubernetes is an object. For example, a namespace, pod, Deployment configmap, Secret, etc.
+
+Before creating an object, you represent it in a YAML or JSON format. It is called an Object Specification (Spec). You declare the desired state of the object on the Object Spec. Once the object is created, you can retrieve its details from the Kubernetes API using Kubectl or client libraries.
+
+As we discussed earlier in the prerequisite section, everything in Kubernetes is an API. To create different object types, there are API endpoints provided by the Kubernetes API server. Those object-specific api-endpoints are called resources. For example, an endpoint to create a pod is called a pod resource.
+
+So when you try to create a Kubernetes Object using Kubectl, it converts the YAML spec to JSON format and sends it to the Pod resource (Pod API endpoint).
+
+# Learn About Pod & Associated Resources
+Once you have an understanding of Kubernetes Objects and resources, you can start with a native Kubernetes object called Pod. A pod is a basic building block of Kubernetes.
+
+You should learn all the Pod concepts and their associated objects like Service, Ingress, Persistent Volume, Configmap, and Secret. Once you know everything about a pod, it is very easy to learn other pod-dependent objects like deployments, Daemonset, etc.
+
+First, learn about the Pod Resource Definition (YAML). A typical Pod YAML contains the following high-level constructs.
+
+- Kind
+- Metadata
+- Annotations
+- Labels
+- Selectors
+- Once you have a basic understanding of the above, move on to hands-on learning. These concepts will make more sense when you do hands-on.
+
+Following are the hands-on tasks to learn about Pod and its associated objects.
+
+1. Deploy a pod
+2. Deploy pod on the specific worker node
+4. Add service to pod
+5. Expose the pod Service using Nodeport
+6. Expose the Pod Service using Ingress
+7. Setup Pod resources & limits
+8. Setup Pod with startup, liveness, and readiness probes.
+9. Add Persistent Volume to the pod.
+10. Attach configmap to pod
+11. Add Secret to pod
+12. multi-container pods (sidecar container pattern)
+13. Init containers
+14. Ephemeral containers
+15. Static Pods
+16. Learn to troubleshoot Pods
+
+Few advanced pod scheduling concepts.
+
+1. Pod Preemption & Priority
+2. Pod Disruption Budget
+3. Pod Placement Using a Node Selector
+4. Pod Affinity and Anti-affinity
+5. Container Life Cycle Hooks
+
+
+
+
+
+
+
+
+

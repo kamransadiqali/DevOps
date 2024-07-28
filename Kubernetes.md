@@ -89,11 +89,21 @@ Few advanced pod scheduling concepts.
 4. Pod Affinity and Anti-affinity
 5. Container Life Cycle Hooks
 
+# Learn About Pod Dependent Objects
+Now that you have a better understanding of Pod and independent kubernetes resources, you can start learning about objects that are dependent on the Pod object. While learning this, you will come across concepts like HPA (Horizontal Pod Autoscaling) and VPA (Verification Pod Autoscaling)
 
+1. Replicaset
+2. Deployment
+3. Daemonsets
+4. Statefulset
+5. Jobs & Cronjobs
 
+# Kubernetes Deployment Tools (GitOps Based)
+GitOps is a technical practice that uses Git as a single source of truth for declarative infrastructure and application code.
+Some popular GitOps-based tools for deploying applications to Kubernetes clusters are:
 
-
-
-
+- ArgoCD
+- FluxCD
+- JenkinsX
 
 

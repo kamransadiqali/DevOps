@@ -10,4 +10,5 @@
 - Docker
 - Kubernetes
 - AWS
-![Uploading image.png…]()
+
+![Uploading DevOps.jpg…]()

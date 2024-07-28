@@ -1,6 +1,6 @@
 ![GitHub](https://github.com/user-attachments/assets/f86a01d3-4f46-48a1-87a9-006dfd9bbbcb)
 > [!NOTE]
-> GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.
+> **GitHub** *is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.*
 
 # Getting & Creating Projects
 

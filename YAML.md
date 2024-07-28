@@ -50,11 +50,73 @@ character: { name: aragorn, race: man }
 ![image](https://github.com/user-attachments/assets/e0bbbf09-a7e3-4048-b05d-6d662469ff43)
 
 # YAML Basics
+
 ## Step-01: Comments & Key Value Pairs
 - Space after colon is mandatory to differentiate key and value
-```
+```yml
 # Defining simple key value pairs
-name: kalyan
+name: ABC
 age: 23
-city: Hyderabad
+city: XYZ
+```
+
+## Step-02: Dictionary / Map
+- Set of properties grouped together after an item
+- Equal amount of blank space required for all the items under a dictionary
+```yml
+person:
+  name: ABC
+  age: 23
+  city: XYZ
+```
+
+## Step-03: Array / Lists
+- Dash indicates an element of an array
+```yml
+person: # Dictionary
+  name: ABC
+  age: 23
+  city: XYZ
+  hobbies: # List  
+    - walking
+    - reading
+  hobbies: [walking, reading]   # List with a differnt notation  
+```  
+
+## Step-04: Multiple Lists
+- Dash indicates an element of an array
+```yml
+person: # Dictionary
+  name: ABC
+  age: 23
+  city: XYZ
+  hobbies: # List  
+    - walking
+    - reading
+  hobbies: [walking, reading]   # List with a differnt notation  
+  friends: # 
+    - name: friendA
+      age: 22
+    - name: friendB
+      age: 23            
+```  
+
+
+## Step-05: Sample Pod Tempalte for Reference
+```yml
+apiVersion: v1 # String
+kind: Pod  # String
+metadata: # Dictionary
+  name: myapp-pod
+  labels: # Dictionary 
+    app: myapp         
+spec:
+  containers: # List
+    - name: myapp
+      image: stacksimplify/kubenginx:1.0.0
+      ports:
+        - containerPort: 80
+          protocol: "TCP"
+        - containerPort: 81
+          protocol: "TCP"
 ```

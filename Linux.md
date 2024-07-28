@@ -1,5 +1,6 @@
 ![linux](https://github.com/user-attachments/assets/f503e642-55cc-42d1-ab79-eeeb4c6f9d8f)
-
+> [!NOTE]
+> Linux is both an open-source Unix-like kernel and a generic name for a family of open-source Unix-like operating systems based on the Linux kernel.
 
 # 1. System Architecture
 ## Determine and configure hardware settings

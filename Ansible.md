@@ -1,6 +1,4 @@
-![Uploading Ansible_logo.svg…]()
-
-
+![Ansible_Logo](https://github.com/user-attachments/assets/22bc7e65-b9e0-4bac-8f29-6e35793df4c7)
 
 > [!NOTE]
 > **Ansible** *is a suite of software tools that enables infrastructure as code. It is open-source and the suite includes software provisioning, configuration management, and application deployment functionality.*

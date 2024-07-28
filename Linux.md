@@ -1,4 +1,6 @@
-![linux](https://github.com/user-attachments/assets/e8e8994d-2cbf-43ce-93b8-b6e53b8e8449)
+![linux](https://github.com/user-attachments/assets/f503e642-55cc-42d1-ab79-eeeb4c6f9d8f)
+
+
 # 1. System Architecture
 ## Determine and configure hardware settings
 - Enable and disable integrated peripherals.

@@ -12,7 +12,7 @@
 - Jenkins
 ## Configuration Management
 - Ansible
-## Infrastructure-as-code
+### Infrastructure-as-code (IaC)
 - Terraform
 - Docker
 - Kubernetes

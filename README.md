@@ -1,21 +1,24 @@
 # DevOps Tools
 
-## Operating System
+### Operating System
 - Linux
-## Language
+### Language
 - YAML
-## Code Editor
+### Code Editor
 - Visual Studio Code
-## Version Control
+### Version Control
 - GitHub
-## Continuous Integration (CI) and Continuous Deployment (CD)
+### Continuous Integration (CI) and Continuous Deployment (CD)
 - Jenkins
-## Configuration Management
+### Configuration Management
 - Ansible
 ### Infrastructure-as-code (IaC)
 - Terraform
+### Containerization
 - Docker
+### Container Orchestration
 - Kubernetes
+### Cloude
 - AWS
 
 

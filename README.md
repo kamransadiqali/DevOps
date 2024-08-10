@@ -18,7 +18,7 @@
 - Docker
 ### Container Orchestration
 - Kubernetes
-#### Cloud
+### Cloud
 - AWS
 
 

@@ -1,9 +1,10 @@
+## Why Use Containers?
 ![image](https://github.com/user-attachments/assets/33d9f370-b879-4d5c-94c1-b877443ed968)
 ![image](https://github.com/user-attachments/assets/c00f8e31-279e-4bac-a3d4-d5f9193fcdb3)
 ![image](https://github.com/user-attachments/assets/fbd661bc-b48b-4671-bfc7-5b199890ecc5)
 ![image](https://github.com/user-attachments/assets/fcfe5d96-212f-46e8-85d6-cba76dd1bccf)
-![Uploading image.png…]()
-
+![image](https://github.com/user-attachments/assets/ad9ce216-c8d4-4e2c-a311-adbbd07e3742)
+## Running Containerized Applications
 ![image](https://github.com/user-attachments/assets/8fb390c8-4b62-4d4f-884a-29dc51da6c2b)
 ![image](https://github.com/user-attachments/assets/05c51850-9841-4561-a048-ecec3c6507d0)
 ![image](https://github.com/user-attachments/assets/fe4efba4-af24-4e56-a155-6af3b10526d7)
@@ -32,7 +33,7 @@
 ![image](https://github.com/user-attachments/assets/9c7f5c26-f11e-4cae-a495-2b9e750ce9a2)
 ![image](https://github.com/user-attachments/assets/81eb4ae4-add9-4d75-bbfd-9fd2785dd0d7)
 ![image](https://github.com/user-attachments/assets/532f0527-b40f-4957-adbb-7b934f7ccd76)
-
+### Kubernetes, Containers, and Cloud
 ![image](https://github.com/user-attachments/assets/4aa35a80-cc20-457f-bc4c-7239279bac7d)
 ![image](https://github.com/user-attachments/assets/5b846052-3d74-4c41-a33a-dfe48b5fc426)
 ![image](https://github.com/user-attachments/assets/fa58b838-5994-487e-b975-42d9ac6ec607)
@@ -57,7 +58,7 @@
 ![image](https://github.com/user-attachments/assets/19127ece-f7b1-4748-9d41-a7a49dc48cc3)
 ![image](https://github.com/user-attachments/assets/80208839-1a7e-4ed6-9e2f-69a64709bdbe)
 ![image](https://github.com/user-attachments/assets/488bb787-d839-4ffa-9e17-87d7d9842c17)
-
+## Running Applications in Kubernetes 
 ![image](https://github.com/user-attachments/assets/66f52f21-e169-466e-a230-2cb722204341)
 ![image](https://github.com/user-attachments/assets/f751b3a3-c2e4-4e18-8fa9-b61d46160ec5)
 ![image](https://github.com/user-attachments/assets/3af33cc2-92fc-424e-a2b6-258c731befdc)

@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/925ede4c-d9f7-487d-8caa-82051336a7fa)
 
 - A container is a solution that runs code (the application) in an isolated environment.
 - The container is based on a container image.

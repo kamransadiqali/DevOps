@@ -1,7 +1,7 @@
 
-•	A container is a solution that runs code (the application) in an
+- A container is a solution that runs code (the application) in an
 isolated environment.
-•	The container is based on a container image.
+- The container is based on a container image.
 •	The application can run on any platform: cloud as well as
 computer.
 •	The container image is static and portable, and doesn't contain

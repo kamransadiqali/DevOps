@@ -31,3 +31,9 @@
   - No daemon needed anymore; any user can run a container as a child process of the current shell
   - No need to run containers with elevated privileges
   - And because of OCI, no conversion is needed
+
+## Writing Your Application Code
+#include <stdio.h>
+int main() {
+printf("Hello, Container World!\n"); return 0;
+}

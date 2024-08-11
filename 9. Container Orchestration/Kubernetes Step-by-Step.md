@@ -17,3 +17,17 @@
   - security (namespaces)
   - logging and monitoring
 - The runtime runs on any platform: Linux, Windows, MacOS, as well as cloud
+
+- Containers started by running processes in chroot isolation
+- Chroot evolved into namespaces, and cgroups were added for resource allocation, and this was the LXC native Linux container
+- Docker further developed LXC containers
+  - Standardized container image format
+  - Registry for distribution of images
+  - Docker daemon for managing containers
+- The Docker project became a bit less open source
+- Other OCI compatible container projects existed
+- Red Hat picked up the Podman project
+- Podman used OCI container images differently
+  - No daemon needed anymore; any user can run a container as a child process of the current shell
+  - No need to run containers with elevated privileges
+  - And because of OCI, no conversion is needed

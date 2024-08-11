@@ -32,8 +32,24 @@
   - No need to run containers with elevated privileges
   - And because of OCI, no conversion is needed
 
-## Writing Your Application Code
+## Step 1: Writing Your Application Code
 #include <stdio.h>
 int main() {
 printf("Hello, Container World!\n"); return 0;
 }
+## Step 2: Create a Dockerfile
+#Use the official GCC image as a parent FROM gcc:latest
+
+
+#Set the work ing directory in the conta iner WORKDIR  /usr/src/app
+
+
+#Copy the current directory contents into the container at /usr/src/app COPY..
+
+
+#Compile the C program RUN gee -o hello hello.c
+
+
+#Run the program from the previous step when the container launches
+CMD ["./hello"]
+

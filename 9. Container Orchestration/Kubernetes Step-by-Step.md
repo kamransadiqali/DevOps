@@ -1,10 +1,10 @@
-# Why Use Containers?
+# 1. Why Use Containers?
 ![image](https://github.com/user-attachments/assets/33d9f370-b879-4d5c-94c1-b877443ed968)
 ![image](https://github.com/user-attachments/assets/c00f8e31-279e-4bac-a3d4-d5f9193fcdb3)
 ![image](https://github.com/user-attachments/assets/fbd661bc-b48b-4671-bfc7-5b199890ecc5)
 ![image](https://github.com/user-attachments/assets/fcfe5d96-212f-46e8-85d6-cba76dd1bccf)
 ![image](https://github.com/user-attachments/assets/ad9ce216-c8d4-4e2c-a311-adbbd07e3742)
-# Running Containerized Applications
+# 2. Running Containerized Applications
 ![image](https://github.com/user-attachments/assets/8fb390c8-4b62-4d4f-884a-29dc51da6c2b)
 ![image](https://github.com/user-attachments/assets/05c51850-9841-4561-a048-ecec3c6507d0)
 ![image](https://github.com/user-attachments/assets/fe4efba4-af24-4e56-a155-6af3b10526d7)
@@ -12,7 +12,7 @@
 ![image](https://github.com/user-attachments/assets/b82ae350-e5c1-4cc3-86f0-5a5cda37e668)
 ![image](https://github.com/user-attachments/assets/4908f9c8-fefa-473b-a830-4ea11370f37e)
 ![image](https://github.com/user-attachments/assets/85ace348-c5fa-4c61-b338-caf127a929af)
-# Kubernetes, Containers, and Cloud
+# 3. Kubernetes, Containers, and Cloud
 ![image](https://github.com/user-attachments/assets/01271fbe-8ad0-4c80-844d-79def432604d)
 ![image](https://github.com/user-attachments/assets/62ee49d4-b2e8-433f-bbb6-90714ab45cfd)
 ![image](https://github.com/user-attachments/assets/ca197419-18aa-4b95-a9c7-433ae577f0c7)
@@ -24,7 +24,7 @@
 ![image](https://github.com/user-attachments/assets/f737f932-e9aa-4e06-aed1-217dde5e0db3)
 ![image](https://github.com/user-attachments/assets/ea0cf523-9bdb-4015-9d4c-0f0683de373d)
 ![image](https://github.com/user-attachments/assets/0b879cd4-12f0-4b7f-ba27-c6684c1da7a9)
-# Running Applications in Kubernetes
+# 4. Running Applications in Kubernetes
 ![image](https://github.com/user-attachments/assets/af13960a-1ce4-43f0-bad7-4ce59291c38c)
 ![image](https://github.com/user-attachments/assets/67ac1288-4557-42de-93a6-d3a6538102f8)
 ![image](https://github.com/user-attachments/assets/5dfde696-8139-438a-a649-6044382ac924)
@@ -35,7 +35,7 @@
 ![image](https://github.com/user-attachments/assets/9c7f5c26-f11e-4cae-a495-2b9e750ce9a2)
 ![image](https://github.com/user-attachments/assets/81eb4ae4-add9-4d75-bbfd-9fd2785dd0d7)
 ![image](https://github.com/user-attachments/assets/532f0527-b40f-4957-adbb-7b934f7ccd76)
-# Accessing Kubernetes Applications
+# 5. Accessing Kubernetes Applications
 ![image](https://github.com/user-attachments/assets/4aa35a80-cc20-457f-bc4c-7239279bac7d)
 ![image](https://github.com/user-attachments/assets/5b846052-3d74-4c41-a33a-dfe48b5fc426)
 ![image](https://github.com/user-attachments/assets/fa58b838-5994-487e-b975-42d9ac6ec607)
@@ -43,7 +43,7 @@
 ![image](https://github.com/user-attachments/assets/74f917bd-fb69-426f-aa02-742eb42c348b)
 ![image](https://github.com/user-attachments/assets/8903a16f-9acf-41c4-8dac-96d19b327b81)
 ![image](https://github.com/user-attachments/assets/af14b467-20d6-402c-97fd-06c2a6d99641)
-# Kubernetes Storage
+# 6. Kubernetes Storage
 ![image](https://github.com/user-attachments/assets/cf59915f-b621-4447-b143-e4f5f346dce0)
 ![image](https://github.com/user-attachments/assets/bfbd6334-052d-4322-96ec-2c9d62d4976f)
 ![image](https://github.com/user-attachments/assets/13302be8-f880-4af7-8854-213f7d9b33c7)
@@ -52,7 +52,7 @@
 ![image](https://github.com/user-attachments/assets/80266559-af73-4f58-bdd0-72ce27f41082)
 ![image](https://github.com/user-attachments/assets/1fc7cec9-a5a4-47d9-a28e-f2c7d8501c0c)
 ![image](https://github.com/user-attachments/assets/a76b2771-b2cf-40f7-8b6b-9084a99acc36)
-# Decoupling Configuration
+# 7. Decoupling Configuration
 ![image](https://github.com/user-attachments/assets/baebf407-9157-4c68-8fa2-f393988b747d)
 ![image](https://github.com/user-attachments/assets/9c11e2ae-2e54-4796-80f0-64bbaf95e347)
 ![image](https://github.com/user-attachments/assets/5f71947f-9a60-4d09-a175-ba358462d2c3)
@@ -62,7 +62,7 @@
 ![image](https://github.com/user-attachments/assets/19127ece-f7b1-4748-9d41-a7a49dc48cc3)
 ![image](https://github.com/user-attachments/assets/80208839-1a7e-4ed6-9e2f-69a64709bdbe)
 ![image](https://github.com/user-attachments/assets/488bb787-d839-4ffa-9e17-87d7d9842c17)
-# Running Applications in Kubernetes 
+# 8. Running Applications in Kubernetes 
 ![image](https://github.com/user-attachments/assets/66f52f21-e169-466e-a230-2cb722204341)
 ![image](https://github.com/user-attachments/assets/f751b3a3-c2e4-4e18-8fa9-b61d46160ec5)
 ![image](https://github.com/user-attachments/assets/3af33cc2-92fc-424e-a2b6-258c731befdc)
@@ -78,13 +78,3 @@
 ![image](https://github.com/user-attachments/assets/9aeeb01c-25f8-4797-9370-5d1d4aba68e0)
 ![image](https://github.com/user-attachments/assets/8e54532f-493b-4d14-883a-31dd9b8cef5f)
 ![image](https://github.com/user-attachments/assets/4578b26d-b075-4fef-aeb4-9aadc22af64a)
-
-
-
-
-
-
-
-
-
-

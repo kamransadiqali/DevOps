@@ -1,0 +1,73 @@
+---
+- name: Install python3 and docker 
+  hosts: docker
+  become: yes
+  gather_facts: false 
+  tasks: 
+    - name: Install python3 and docker 
+      #vars: 
+        #ansible_python_interpreter: /usr/bin/python
+      yum:
+        name: 
+          - python3
+          - docker 
+        update_cache: yes 
+        state: present 
+
+- name: Install Docker-complse
+  hosts: docker
+  become: yes
+  tasks: 
+    - name: Install Docker-compose 
+      get_url:
+        url: https://github.com/docker/compose/releases/download/v2.29.3/docker-compose-linux-x86_64
+        dest: /usr/local/bin/docker-compose
+        mode: +x
+
+- name: Start Docker
+  hosts: docker 
+  become: yes 
+  tasks: 
+    - name: Start docker deaemon 
+      systemd:
+        name: docker 
+        state: started 
+    # - name: Install docker python module 
+    #   pip: 
+    #     name: docker 
+
+- name: Add ec2 user to docker group 
+  hosts: docker 
+  become: yes 
+  tasks: 
+    - name: Add ec2 user to docker group 
+      user: 
+        name: ec2-user
+        groups: docker 
+        append: yes 
+    - name: Reconnect to server session 
+      meta: reset_connection    
+
+- name: Test docker pull
+  hosts: docker 
+  tasks: 
+    - name: Pull redis
+      docker_image:
+        name: redis 
+        source: pull 
+      #command: docker pull redis 
+
+- name: Start docker containers 
+  hosts: docker 
+  tasks: 
+    - name: Copy docker compose 
+      copy: 
+        src: /home/kamran/Desktop/Ansible/docker-compose.yaml
+        dest: /home/ec2-user/docker-compose.yaml
+    - name: Start container from compose 
+      #vars: 
+        #ansible_python_interpreter: /usr/bin/python
+      docker_compose:
+        project_src: /home/ec2-user    
+        #state: present
+    

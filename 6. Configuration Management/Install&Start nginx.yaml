@@ -1,1 +1,13 @@
-
+---
+- name: create nginx web server
+  hosts: lightsail
+  tasks: 
+  - name: install nginx server
+    apt: 
+      name: nginx
+      state: latest
+    become: yes
+  - name: start nginx server
+    service:
+      name: nginx
+      state: started    

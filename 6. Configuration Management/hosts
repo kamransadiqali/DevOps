@@ -1,0 +1,20 @@
+[lightsail]
+111.111.111.111
+
+[lightsail:vars]
+ansible_user=ubuntu
+
+
+[aws]
+ec2-11-22-33-44.eu-north-1.compute.amazonaws.com ansible_python_interpreter=/usr/bin/python3
+ec2-11-22-33-45.eu-north-1.compute.amazonaws.com  ansible_python_interpreter=/usr/bin/python3
+
+[aws:vars]
+ansible_ssh_private_key_file=~/Downloads/ansible.pem
+ansible_user=ec2-user
+
+[docker]
+11.123.45.67
+
+[docker:vars]
+ansible_user=ec2-user
